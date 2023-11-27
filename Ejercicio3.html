@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio3.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Actividad 2</h1>
+    <p>Sigue las pistas y averiguarás el nombre de cada uno de los personajes de la foto
+        <audio id="miAudio1" src="Audios/Actividad N°3/Actividad N°3.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio1')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+    
+    <form action="guardar_respuestas3.php" method="post">
+        <div class="Contenido">
+            <p class="Texto"><strong>Josefina</strong> está embarazada <audio id="miAudio2" src="Audios/Actividad N°3/josefina.mp3"></audio>
+                <button class="BotonEscuchar" onclick="reproducirPausar('miAudio2')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+
+            <p class="Texto"><strong>Luis</strong> es más alto que <strong>Sonia</strong>, pero más bajo que <strong>Juan</strong><audio id="miAudio3" src="Audios/Actividad N°3/luisSonijuan.mp3"></audio>
+                <button class="BotonEscuchar" onclick="reproducirPausar('miAudio3')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+
+            <p class="Texto"><strong>Elena</strong> es más alta que <strong>Juan</strong><audio id="miAudio4" src="Audios/Actividad N°3/ElenaJuan.mp3"></audio>
+                <button class="BotonEscuchar" onclick="reproducirPausar('miAudio4')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+
+            <p class="Texto"><strong>Daniel</strong> es hermano de <strong>Elena</strong><audio id="miAudio5" src="Audios/Actividad N°3/DanielElena.mp3"></audio>
+                <button class="BotonEscuchar" onclick="reproducirPausar('miAudio5')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+        </div>
+
+        <div>
+            <img src="Imagenes/Actividad3.png">
+        </div>
+
+        <div>
+            <select id="respuesta1" name="respuesta1">
+                <option value="">Respuesta</option>
+                <option value="Josefina">Josefina</option>
+                <option value="Luis">Luis</option>
+                <option value="Sonia">Sonia</option>
+                <option value="Juan">Juan</option>
+                <option value="Elena">Elena</option>
+                <option value="Daniel">Daniel</option>
+            </select>
+
+            <select id="respuesta2" name="respuesta2">
+                <option>Respuesta</option>
+                <option>Josefina</option>
+                <option>Luis</option>
+                <option>Sonia</option>
+                <option>juan</option>
+                <option>Elena</option>
+                <option>Daniel</option>
+            </select>
+    
+            <select id="respuesta3" name="respuesta3">
+                <option>Respuesta</option>
+                <option>Josefina</option>
+                <option>Luis</option>
+                <option>Sonia</option>
+                <option>juan</option>
+                <option>Elena</option>
+                <option>Daniel</option>
+            </select>
+    
+            <select id="respuesta4" name="respuesta4">
+                <option>Respuesta</option>
+                <option>Josefina</option>
+                <option>Luis</option>
+                <option>Sonia</option>
+                <option>juan</option>
+                <option>Elena</option>
+                <option>Daniel</option>
+            </select>
+    
+            <select id="respuesta5" name="respuesta5">
+                <option>Respuesta</option>
+                <option>Josefina</option>
+                <option>Luis</option>
+                <option>Sonia</option>
+                <option>juan</option>
+                <option>Elena</option>
+                <option>Daniel</option>
+            </select>
+    
+            <select id="respuesta6" name="respuesta6">
+                <option>Respuesta</option>
+                <option>Josefina</option>
+                <option>Luis</option>
+                <option>Sonia</option>
+                <option>juan</option>
+                <option>Elena</option>
+                <option>Daniel</option>
+            </select>
+
+        </div>
+
+        <div class="divEnviar">
+            <a href="borrar_respuestas1.php"><button class="Respuesta1" type="button">Anterior</button></a>
+        </div>
+
+        <div class="divEnviar">
+            <a href="Ejercicio4.1.html"><button class="Respuesta1" type="submit" >Siguiente</button>
+        </div>
+    </form>
+
+    <script src="JavaScript/Ejercicio3.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio1.css">
+    <title>Encuesta</title>
+
+    <script>
+        // Objeto para almacenar las respuestas
+        var respuestas = {};
+
+        function seleccionarRespuesta(valor, numeroPregunta) {
+            // Almacena la respuesta seleccionada en el objeto
+            respuestas['pregunta' + numeroPregunta] = valor;
+
+            // Obtén el elemento con la clase 'RespuestaSeleccionada' (si existe)
+            var respuestaSeleccionada = document.querySelector('.RespuestaSeleccionada');
+
+            // Verifica si el elemento existe antes de intentar acceder a su clase
+            if (respuestaSeleccionada) {
+                respuestaSeleccionada.classList.remove('RespuestaSeleccionada');
+            }
+
+            // Cambia el color del botón a verde (o cualquier otro estilo que desees)
+            event.target.classList.add('RespuestaSeleccionada');
+        }
+
+        function enviarRespuestas() {
+            // Resto del código para enviar respuestas
+        }
+    </script>
+</head>
+<body>
+    <h1 class="Titulo1">Actividad 1</h1>
+    <p>Lee el texto que aparece a continuación y, posteriormente, 
+    marca si las afirmaciones que se hacen son verdaderas (V), 
+    falsas (F) o no se puede saber (X)     
+    <audio id="miAudio" src="Audios/Actividad N°1/Actividad N°1.mp3"></audio>
+
+    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    
+</p>
+    
+    <h2 class="Titulo2">Los cactus</h2>
+    
+    <p class="Texto1">Las cactáceas son plantas de la familia de las suculentas. 
+        Son originarias de América, pero también se encuentran 
+        en África y Madagascar. Son de tamaño mediano, grande 
+        o pequeño. En su interior contienen gran caudal de 
+        sábila como reserva de líquido dado que son plantas
+        que se encuetran en climas desérticos (secos).
+        <audio id="miAudio2" src="Audios/Actividad N°1/Cactus.mp3"></audio>
+
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio2')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+    
+    <div class="tablaCentral">
+        <table>
+            <tr>            
+                <td>1. Todos los cactus son del mismo tamaño<audio id="miAudio3" src="Audios/Actividad N°1/P1.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio3')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '1'); cambiarColor(this, '1');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '1'); cambiarColor(this, '1');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '1'); cambiarColor(this, '1');">X</button></td>
+            </tr>
+            <tr>
+                <td>2. Los cactus pueden vivir en el desierto <audio id="miAudio4" src="Audios/Actividad N°1/P2.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio4')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '2'); cambiarColor(this, '2');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '2'); cambiarColor(this, '2');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '2'); cambiarColor(this, '2');">X</button></td>
+            </tr>
+            <tr>
+                <td>3. Las flores de los cactus son hermofroditas <audio id="miAudio5" src="Audios/Actividad N°1/P3.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio5')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '3'); cambiarColor(this, '3');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '3'); cambiarColor(this, '3');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '3'); cambiarColor(this, '3');">X</button></td>
+            </tr>
+            <tr>
+                <td>4.- Los cactus son originarios de América <audio id="miAudio6" src="Audios/Actividad N°1/P4.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio6')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '4'); cambiarColor(this, '4');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '4'); cambiarColor(this, '4');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '4'); cambiarColor(this, '4');">X</button></td>
+            </tr>
+            <tr>
+                <td>5. Los cactus son todos verdes, sin importar la especie <audio id="miAudio7" src="Audios/Actividad N°1/P5.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio7')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '5'); cambiarColor(this, '5');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '5'); cambiarColor(this, '5');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '5'); cambiarColor(this, '5');">X</button></td>
+            </tr>
+            <tr>
+                <td>6. Los cactus se encuentran en lugares fríos y húmedos <audio id="miAudio8" src="Audios/Actividad N°1/P6.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio8')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '6'); cambiarColor(this, '6');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '6'); cambiarColor(this, '6');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '6'); cambiarColor(this, '6');">X</button></td>
+            </tr>
+            <tr>
+                <td>7. Los cactus pertenecen a la familia de las suculencias <audio id="miAudio9" src="Audios/Actividad N°1/P7.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio9')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '7'); cambiarColor(this, '7');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '7'); cambiarColor(this, '7');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '7'); cambiarColor(this, '7');">X</button></td>
+            </tr>
+            <tr>
+                <td>8. Todos los cactus tienen espinas <audio id="miAudio10" src="Audios/Actividad N°1/P8.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio10')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '8'); cambiarColor(this, '8');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '8'); cambiarColor(this, '8');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '8'); cambiarColor(this, '8');">X</button></td>
+            </tr>
+            <tr>
+                <td>9. Existen cactus de 10 metros de alto <audio id="miAudio11" src="Audios/Actividad N°1/P9.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio11')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '9'); cambiarColor(this, '9');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '9'); cambiarColor(this, '9');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '9'); cambiarColor(this, '9');">X</button></td>
+            </tr>
+            <tr>
+                <td>10. Hay 100 especies de cactus en el mundo <audio id="miAudio12" src="Audios/Actividad N°1/P10.mp3"></audio>
+                    <button class="BotonEscuchar" onclick="reproducirPausar('miAudio12')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('V', '10'); cambiarColor(this, '10');">V</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('F', '10'); cambiarColor(this, '10');">F</button></td>
+                    <td><button class="Respuesta" onclick="seleccionarRespuesta('X', '10'); cambiarColor(this, '10');">X</button></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="divEnviar">
+        <a href="borrar_respuesta_index.php"><button class="Respuesta1" type="button">Anterior</button></a>
+    </div>
+
+    <div class="divEnviar">
+        <a href="Ejercicio3.html"><button class="Respuesta1" onclick="enviarRespuestas()" type="button">Siguiente</button></a>
+    </div>
+    <script src="JavaScript/Ejercicio1.js"></script>
+</body>
+</html>

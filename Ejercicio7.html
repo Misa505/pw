@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio7.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Actividad 7</h1>
+    <p>Observe la tabla y a continuacion marque el numero que sea igual al primero de la izquierda
+        <audio id="miAudio1" src="Audios/Actividad N°7/Actividad N°7.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio1')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+
+    <div clase="tablaCentral">
+        <table border="1">
+            <tr>
+                <td class="Ejemplo">Ejemplo</td>
+                <td class="EjemploC">44561</td>
+                <td class="Ejemplo">45316</td>
+                <td class="Ejemplo">44516</td>
+                <td class="Ejemplo">44165</td>
+                <td class="EjemploC">44561</td>
+            </tr>
+            <tr>
+                <td>1)</td>
+                <td>82325</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '1')">82545</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '1')">82735</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '1')">82325</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '1')">83325</button></td>
+            </tr>
+            <tr>
+                <td>2)</td>
+                <td>91348</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '2')">91358</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '2')">92348</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '2')">74625</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '2')">91348</button></td>
+            </tr>
+            <tr>
+                <td>3)</td>
+                <td>12712</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '3')">12212</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '3')">12712</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '3')">12812</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '3')">74512</button></td>
+            </tr>
+            <tr>
+                <td>4)</td>
+                <td>32684</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '4')">32644</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '4')">31684</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '4')">47512</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '4')">32684</button></td>
+            </tr>
+            <tr>
+                <td>5)</td>
+                <td>29435</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '5')">29445</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '5')">29434</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '5')">29435</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '5')">29935</button></td>
+            </tr>
+            <tr>
+                <td>6)</td>
+                <td>25755</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '6')">35770</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '6')">25755</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '6')">25760</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '6')">36765</button></td>
+            </tr>
+            <tr>
+                <td>7)</td>
+                <td>37102</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '7')">37112</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '7')">37102</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '7')">37002</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '7')">37202</button></td>
+            </tr>
+            <tr>
+                <td>8)</td>
+                <td>55055</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '8')">53035</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '8')">65056</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '8')">55055</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '8')">31203</button></td>
+            </tr>
+            <tr>
+                <td>9)</td>
+                <td>92274</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '9')">92274</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '9')">82274</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '9')">82273</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '9')">82277</button></td>
+            </tr>
+            <tr>
+                <td>10)</td>
+                <td>78465</td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '10')">74568</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '10')">87564</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '10')">78465</button></td>
+                <td><button class="Respuesta" onclick="cambiarColor(this, '10')">68574</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="divEnviar">
+        <a href="Ejercicio6.5.html"><button class="EnviarRespuesta">Anterior</button></a>
+    </div>
+
+    <div class="divEnviar1">
+        <a href="Ejercicio8.html"><button class="EnviarRespuesta">Siguiente</button></a>
+    </div>
+
+    <script src="JavaScript/Ejercicio7.js"></script>
+</body>
+</html>

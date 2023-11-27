@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio4.css">
+    <title>Actividad 4</title>
+</head>
+<body>
+
+    <h1>Actividad 3.3</h1>
+    <p>Observa las siguientes imágenes y responde las preguntas según corresponda. Tiempo: 5 minutos cada una <audio id="miAudio1" src="Audios/Actividad N°4/actividad N°4.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio1')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+
+    <h2>3. ¿Cuántos rectángulos hay en la siguiente imagen?<audio id="miAudio4" src="Audios/Actividad N°4/P3-4.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio4')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></h2>
+
+    <!-- Mover la respuesta y los botones dentro del formulario -->
+    <form id="formularioRespuesta3">
+        <div class="divImagen3">
+            <img class="Imagen3" src="Imagenes/Actividad4IMG3.png">
+        </div>
+
+        <div class="respuesta">
+            <h2>Respuesta</h2>
+            <input type="text" id="respuestaPregunta3" name="respuestaPregunta3">
+        </div>
+
+        <div class="divEnviar">
+            <button class="Respuesta1" onclick="borrarDatosYRedirigir3()">Anterior</button>
+        </div>
+
+        <div class="divEnviar">
+            <button class="Respuesta1" onclick="enviarRespuesta3('formularioRespuesta3')" type="button">Siguiente</button>
+        </div>
+    </form>
+
+    <script src="JavaScript/Ejercicio4.js"></script>
+
+</body>
+</html>

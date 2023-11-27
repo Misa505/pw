@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/diseño.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+</head>
+<body class="inicio">
+    <h1 id="Titulo">Prueba Psicopedagógica Informal para estudiantes de 8° básico</h1>
+
+    
+    <form method="post" action="guardar_datos.php" class="formulario-normal"  id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+        
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+        
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" required>
+        
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso" required>
+        
+        <label for="fecha">Fecha de Aplicación: </label>
+        <input type="date" id="fecha" name="fecha" required>
+<!-- ------------OPCIONES DE ACCESIBILIDAD ----------------------------------------------------------------------- -->
+<select id="modoAccesibilidad" name="modoAccesibilidad" style="margin-top: 10px;">
+    <option value="fondo-claro">Reset</option>
+    <option value="escala-de-grises">Escala de Grises</option>
+    <option value="contraste-negativo">Contraste Negativo</option>
+    <option value="alto-contraste">Alto Constraste</option>
+</select>
+
+        <button onclick="aplicarModoAccesibilidad()" type="button">Aplicar</button>  
+        <button type="submit" class="miBoton">Empezar</button>
+
+    </form>
+    
+    <footer>
+        <p>&copy; 2023 Luciano Contreras Lucas Molina y Misael Meza. Todos los derechos reservados.</p>
+    </footer>
+    <script src="JavaScript/index.js"></script>
+
+</body>
+</html>

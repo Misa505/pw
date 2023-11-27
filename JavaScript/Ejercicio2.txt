@@ -1,0 +1,7 @@
+window.onload = function() {
+    // Recuperar el estilo almacenado en localStorage y aplicarlo al body
+    var estilo = localStorage.getItem('estilo');
+    if (estilo) {
+        document.body.className = estilo;
+    }
+};

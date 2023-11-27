@@ -1,0 +1,43 @@
+.fondo-claro {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para escala de grises */
+.escala-de-grises {
+    filter: grayscale(100%);
+    background-color: gray;
+}
+
+/* Estilos para alto contraste */
+.contraste-negativo {
+    background-color: black;
+    color: yellow;
+    /* Agrega aquí tus estilos de alto contraste */
+}
+
+.alto-contraste h1 {
+    color: blue;
+}
+
+.alto-contraste {
+    color:#40C090;
+    background-color: black;
+}
+
+.Respuesta1 {
+    float: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #3498db;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.divEnviar{
+    margin-left: 40%;
+}

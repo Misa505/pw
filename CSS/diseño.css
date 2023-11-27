@@ -1,0 +1,132 @@
+.fondo-claro {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para escala de grises */
+.escala-de-grises {
+    filter: grayscale(100%);
+    background-color: gray;
+}
+
+/* Estilos para alto contraste */
+.contraste-negativo {
+    background-color: black;
+    color: yellow;
+    /* Agrega aquí tus estilos de alto contraste */
+}
+
+.alto-contraste h1 {
+    color: blue;
+}
+
+.alto-contraste {
+    color:#40C090;
+    background-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f3f3;
+    text-align: center;
+}
+
+
+/* Estilos normales */
+.fondo-claro {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para escala de grises */
+.escala-de-grises {
+    filter: grayscale(100%);
+    background-color: gray;
+}
+
+/* Estilos para alto contraste */
+.contraste-negativo {
+    background-color: black;
+    color: yellow;
+    /* Agrega aquí tus estilos de alto contraste */
+}
+
+.alto-contraste h1 {
+    color: blue;
+}
+
+.alto-contraste {
+    color:#40C090;
+    background-color: black;
+}
+
+
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Mover el botón hacia la izquierda */
+    margin-right: 10px;
+    /* Mover el botón hacia la derecha */
+    margin-left: 10px;
+    /* Mover el botón hacia arriba */
+    margin-bottom: -10px;
+    /* Mover el botón hacia abajo */
+    margin-top: -10px; 
+    
+}
+.button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+.miBoton {
+    background-color: #007BFF; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador al pasar el mouse */
+    margin-top: 20px; 
+}
+
+.miBoton:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+footer p {
+    margin: 40px; /* Elimina el margen predeterminado del párrafo */
+    font-size: 10px; /* Tamaño de fuente más pequeño (ajusta el valor según tus preferencias) */
+}
+

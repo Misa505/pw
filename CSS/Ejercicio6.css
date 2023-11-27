@@ -1,0 +1,144 @@
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fondo-claro {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para escala de grises */
+.escala-de-grises {
+    filter: grayscale(100%);
+    background-color: gray;
+}
+
+/* Estilos para alto contraste */
+.contraste-negativo {
+    background-color: black;
+    color: yellow;
+    /* Agrega aquí tus estilos de alto contraste */
+}
+
+.alto-contraste h1 {
+    color: blue;
+}
+
+.alto-contraste {
+    color:#40C090;
+    background-color: black;}
+
+p{
+    font-size: 23px;
+}
+
+.imgRespuesta{
+    width: 45%;
+}
+
+.BotonEscuchar{
+    border: none;
+    background-color: #fff;
+}
+
+.ImagenEscuchar{
+    width: 40px;
+}
+
+.EnviarRespuesta {
+    float: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #3498db;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* ---------------------------Solo para 6.1------------------------ */
+
+img{
+    max-width: 70%;
+}
+
+td{
+    max-width: 600px;
+}
+
+table{
+    border: 100px;
+    border-color: black;
+}
+
+.imgPrincipal{
+    margin-left: 10%;
+
+}
+
+.divEnviar{
+    margin-top: 2%;
+    float: left;
+    margin-left: 47%;   
+}
+.divEnviar1{
+    margin-top: 2%;
+}
+
+/* ---------------------------Solo para 6.2------------------------ */
+.imgPrincipal2{
+    max-width: 80%;
+    margin-left: 20%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+div{
+    margin-left: 20%;
+}
+
+.Respuesta{
+    width: 400px;
+}
+
+.imgHorizontal{
+    width: 55%;
+}
+
+.imgVertical{
+    width: 50%;
+}
+
+.imgRespuesta2{
+    width: 40%;
+}
+
+/* ---------------------------Solo para 6.5------------------------ */
+
+.imgRespuesta5{
+    width: 150px;
+}
+
+.imgPrincipal5{
+    width: 400px;
+}
+
+/*-------------------------prueba---------------------*/
+.RespuestaBoton:hover {
+    background-color: gray;
+}
+
+.RespuestaBoton:active {
+    background-color: grey;
+}
+/*--------------------------------------------------------*/
+.EnviarRespuesta:hover {
+    background-color: blue;
+}
+
+.EnviarRespuesta:active {
+    background-color: blue;
+}
+

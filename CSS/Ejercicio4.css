@@ -1,0 +1,129 @@
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fondo-claro {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para escala de grises */
+.escala-de-grises {
+    filter: grayscale(100%);
+    background-color: gray;
+}
+
+/* Estilos para alto contraste */
+.contraste-negativo {
+    background-color: black;
+    color: yellow;
+    /* Agrega aquí tus estilos de alto contraste */
+}
+
+.alto-contraste h1 {
+    color: blue;
+}
+
+.alto-contraste {
+    color:#40C090;
+    background-color: black;}
+
+.BotonEscuchar{
+    border: none;
+    background-color: #fff;
+}
+
+.ImagenEscuchar{
+    width: 40px;
+}
+
+p{
+    font-size: 23px;
+}
+
+.Respuesta1 {
+    float: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #3498db;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/*--------------------------------Solo para ejercicio 4.1----------------------------------------  */
+.respuesta{
+    margin-top: 1.5%;
+    margin-left: 15%;
+    width: 50%;
+}
+
+div{
+    max-width: 50%;
+    max-height: 50%;
+    float: left;
+}
+
+.Imagen0{
+    margin-left: 10%;
+}
+
+input{
+    width: 50%;
+    height: 150px;
+    font-size: 80px;
+}
+
+img{
+    max-width: 70%;
+}
+
+.divEnviar{
+    margin-top: 5.3%;
+    margin-left: 9.6%;
+}
+
+/* --------------------------------Solo para ejercicio 4.2---------------------------------------- */
+.respuesta3{
+    margin-top: 1.5%;
+    width: 50%;
+    height: 50%;
+}
+
+.divImagen3{
+    margin-top: 2%;
+}
+
+.divEnviar2{
+    margin-top: 3.5%;
+    margin-right: 50%;
+    margin-left: 24%;
+    width: 60%;
+}
+
+/* --------------------------------Solo para ejercicio 4.4---------------------------------------- */
+
+.respuesta4{
+    margin-top: 1.5%;
+    margin-left: 19.9%;
+    width: 50%;
+    height: 50%;
+}
+
+.Imagen4{
+    margin-left: 50%;
+}
+
+/* --------------------------------Solo para ejercicio 4.5---------------------------------------- */
+
+.respuesta5{
+    margin-top: 1.5%;
+    margin-left: 15.2%;
+}
+
+.Imagen5{
+    margin-left: 20%;
+}

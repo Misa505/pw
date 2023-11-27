@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio5.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Actividad 4</h1>
+    <p>Jose esta en un laberinto y se mueve por el, sigue las pistas de las direcciones que 
+        toma para saber donde se encuentra y haz click en la opcion que corresponda al punto final.
+        Usa el laberinto que se representa a continuacion para guiarte <audio id="miAudio1" src="Audios/Actividad N°5/Actividad N°5.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio1')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+    
+    <img src="Imagenes/Actividad5IMG1.jpg">
+
+    <p>1. Jose avanza caminando desde el inicio, dobla a la derecha, despues dobla a la izquierda, luego nuevamente dobla a la izquierda,
+        y finalmente dobla a la derecha, ¿En que punto se encuentra?
+        <audio id="miAudio2" src="Audios/Actividad N°5/P1-5.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio2')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+
+    <table id="pregunta1">
+        <tr>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta1')">A</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta1')">B</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta1')">C</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta1')">D</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta1')">E</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta1')">F</button></td>
+        </tr>
+    </table>
+
+    <p>2. Jose avanza caminando desde el inicio, primero dobla a la izquierda, despues vuelve a doblar a la izquierda y finalmente
+        dobla a la derecha, ¿En que punto se encuentra?
+        <audio id="miAudio3" src="Audios/Actividad N°5/P2-5.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio3')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+
+    <table id="pregunta2">
+        <tr>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta2')">A</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta2')">B</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta2')">C</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta2')">D</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta2')">E</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta2')">F</button></td>
+        </tr>
+    </table>
+
+    <p>3. Jose avanza caminando desde el inicio, primero dobla a la derecha, despues dobla nuevamente a la derecha 
+        y finalmente dobla a la izquierda ¿En que punto se encuentra?
+        <audio id="miAudio4" src="Audios/Actividad N°5/P3-5.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio4')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+    <table id="pregunta3">
+        <tr>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta3')">A</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta3')">B</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta3')">C</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta3')">D</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta3')">E</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta3')">F</button></td>
+        </tr>
+    </table>
+    
+    <p>4. Jose avanza caminando desde el inicio, primero dobla a la derecha, despues nuevamente dobla a la
+        derecha y finalmente dobla a la derecha, ¿En que punto se encuentra?
+        <audio id="miAudio5" src="Audios/Actividad N°5/P4-5.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio5')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+
+        <table id="pregunta4">
+        <tr>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta4')">A</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta4')">B</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta4')">C</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta4')">D</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta4')">E</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta4')">F</button></td>
+        </tr>
+    </table>    
+        
+    </p>
+        
+    <p>5. Jose avanza caminando desde el inicio, primero dobla a la izquierda, despues dobla a la derecha, posteriormente dobla a la
+            izquierda y finalmente, dobla a la derecha ¿En que punto se encuentra?
+            <audio id="miAudio6" src="Audios/Actividad N°5/P5-5.mp3"></audio>
+            <button class="BotonEscuchar" onclick="reproducirPausar('miAudio6')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button>
+    </p>
+
+    <table id="pregunta5">
+        <tr>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta5')">A</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta5')">B</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta5')">C</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta5')">D</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta5')">E</button></td>
+            <td><button class="Respuesta" onclick="cambiarColor(this, 'pregunta5')">F</button></td>
+        </tr>
+    </table>
+
+
+    <div class="divEnviar">
+        <a href="Ejercicio4.5.html"><button class="EnviarRespuesta">Anterior</button></a>
+    </div>
+
+    <div class="divEnviar1">
+        <a href="Ejercicio6.1.html"><button class="EnviarRespuesta">Siguiente</button></a>
+    </div>
+
+    <script src="JavaScript/Ejercicio5.js"></script>
+
+</body>
+</html>

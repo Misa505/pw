@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio2.css">
+    <title>Encuesta</title>
+</head>
+
+<body>
+    <h1>Actividad 2</h1>
+    <div class="actividad1">
+        <img src="Imagenes/Fosforo.png" alt="Fosforo" draggable="true" class="Fosforo">
+
+    </div>
+
+    <div class="divEnviar">
+        <a href="Ejercicio1.html"><button class="Respuesta1">Anterior</button></a>
+    </div>
+
+    <div class="divEnviar">
+        <a href="Ejercicio3.html"><button class="Respuesta1">Siguiente</button></a>
+    </div>
+
+    <script src="JavaScript/Ejercicio2.js"></script>
+</body>

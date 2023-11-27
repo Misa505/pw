@@ -1,0 +1,129 @@
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fondo-claro {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para escala de grises */
+.escala-de-grises {
+    filter: grayscale(100%);
+    background-color: gray;
+}
+
+/* Estilos para alto contraste */
+.contraste-negativo {
+    background-color: black;
+    color: yellow;
+    /* Agrega aquí tus estilos de alto contraste */
+}
+
+.alto-contraste h1 {
+    color: blue;
+}
+
+.alto-contraste {
+    color:#40C090;
+    background-color: black;}
+
+p{
+    font-size: 23px;
+}
+
+div{
+    width: 50%;
+    margin-left: 41.5%;
+}
+
+table {
+    table-layout: fixed;
+    width: 35%;
+}
+
+tr td{
+    border: blue 2px solid;
+    margin-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Ejemplo{
+    border: blue 2px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+}
+
+td.active {
+    animation: colorChange 1s forwards;
+}
+
+td:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+@keyframes colorChange {
+    to {
+        background-color:rgb(221, 232, 14) ; /* Cambia a tu color deseado */
+    }
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+
+.Enviar{
+    width: auto;
+    height: auto;
+    font-size: 15px;
+}
+
+.BotonEscuchar{
+    border: none;
+    background-color: #fff;
+}
+
+.ImagenEscuchar{
+    width: 40px;
+}
+
+/*-------------------------------------------------*/
+.EnviarRespuesta {
+    float: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #3498db;
+    border-radius: 5px;
+    width: 150px;
+}
+.divEnviar{
+    margin-top: 2%;
+    margin-left: 40%;
+       
+}
+.divEnviar1{
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+/*----------------------cambio color boton de anterior y siguiente----------------*/
+.EnviarRespuesta:hover {
+    background-color: blue;
+}
+
+.EnviarRespuesta:active {
+    background-color: blue;
+}

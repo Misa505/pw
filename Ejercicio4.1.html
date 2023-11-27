@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Ejercicio4.css">
+    <title>Actividad 4</title>
+</head>
+
+<body>
+
+    <h1>Actividad 3.1</h1>
+    <p>Observa las siguientes imágenes y responde las preguntas segun corresponda. Tiempo: 5 minutos cada una <audio id="miAudio1" src="Audios/Actividad N°4/actividad N°4.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio1')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></p>
+
+    <h2>1. ¿Cuántos cuadrados hay en la siguiente imagen? <audio id="miAudio2" src="Audios/Actividad N°4/P1-4.mp3"></audio>
+        <button class="BotonEscuchar" onclick="reproducirPausar('miAudio2')"><img class="ImagenEscuchar" src="Imagenes/BotonEscuchar.jpg"></button></h2>
+
+        <form id="formularioRespuesta1">
+            <div class="divImagen1">
+                <img class="Imagen0" src="Imagenes/Actividad4IMG1.png">
+            </div>
+    
+            <div class="respuesta3">
+                <h2>Respuesta</h2>
+                <input type="text" id="respuestaPregunta1" name="respuestaPregunta1">
+            </div>
+        </form>
+    
+        <div class="divEnviar">
+            <button class="Respuesta1" onclick="borrarDatosYRedirigir()">Anterior</button>
+        </div>
+    
+        <div class="divEnviar">
+            <button class="Respuesta1" onclick="enviarRespuesta('formularioRespuesta1')" type="button">Siguiente </button>
+        </div>
+    
+        <script src="JavaScript/Ejercicio4.js"></script>
+
+</body>
